@@ -1,7 +1,7 @@
 <!-- ============================================================ -->
 <!-- FILE: learn_postgresql.md                                    -->
 <!-- DESCRIPTION: Comprehensive PostgreSQL Guide for Termux       -->
-<!-- HOW TO EDIT: Look for <!-- SECTION: ... START/END --> tags   -->
+<!-- HOW TO EDIT: Search for "SECTION: ... START/END" comments    -->
 <!-- ============================================================ -->
 
 # Comprehensive PostgreSQL Guide for Termux 🐘
@@ -532,5 +532,5 @@ pg_ctl -D . stop
 ## 📝 Final Notes
 
 - All commands are tailored to work within the Termux environment on Android.
-- To add new information, simply search for the `<!-- SECTION: ... START -->` and `<!-- SECTION: ... END -->` comments and insert your content between them.
+- To add new information, simply search for the `SECTION: ... START` and `SECTION: ... END` comments and insert your content between them.
 - Happy learning and coding with PostgreSQL! 🎉
