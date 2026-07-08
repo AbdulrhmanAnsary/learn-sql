@@ -1,5 +1,3 @@
-
-```markdown
 <!-- ============================================================ -->
 <!-- FILE: learn_postgresql.md                                    -->
 <!-- DESCRIPTION: Comprehensive PostgreSQL Guide for Termux       -->
@@ -21,7 +19,7 @@
 8. [User & Privileges Management (DCL)](#-8-user--privileges-management-dcl)
 9. [Backup & Restore](#-9-backup--restore)
 10. [Utilities & Extras](#-10-utilities--extras)
-11. [Typical Workflow](#-12-typical-workflow)
+11. [Typical Workflow](#-11-typical-workflow)
 
 <!-- NAVIGATION: END -->
 
@@ -37,7 +35,7 @@
 pkg install postgresql
 ```
 
-1.2 Verify the executables
+### 1.2 Verify the executables
 
 ```bash
 which postgres   # Path to the main server
@@ -46,14 +44,14 @@ which initdb     # Path to the cluster initialization tool
 which pg_ctl     # Path to the server control tool
 ```
 
-1.3 Check versions
+### 1.3 Check versions
 
 ```bash
 postgres --version
 psql --version
 ```
 
-1.4 View help pages (for reference)
+### 1.4 View help pages (for reference)
 
 ```bash
 postgres --help
@@ -68,18 +66,18 @@ pg_ctl --help
 
 <!-- SECTION: CLUSTER_SETUP START -->
 
-🗂️ 2. Cluster & Server Setup
+## 🗂️ 2. Cluster & Server Setup
 
-Goal: Create a project directory and initialize the PostgreSQL cluster.
+> **Goal**: Create a project directory and initialize the PostgreSQL cluster.
 
-2.1 Create a project directory
+### 2.1 Create a project directory
 
 ```bash
 mkdir -p ~/postgresqlProjects
 cd ~/postgresqlProjects
 ```
 
-2.2 Initialize a new PostgreSQL cluster
+### 2.2 Initialize a new PostgreSQL cluster
 
 ```bash
 initdb -D .
@@ -95,36 +93,36 @@ Note: The -D option specifies the directory where the cluster data will be store
 
 <!-- SECTION: SERVER_CONTROL START -->
 
-🚀 3. Server Control (Start/Stop/Status)
+## 🚀 3. Server Control (Start/Stop/Status)
 
-Goal: Start, stop, and check the status of the PostgreSQL server.
+> **Goal**: Start, stop, and check the status of the PostgreSQL server.
 
-3.1 Start the server (with logging enabled)
+### 3.1 Start the server (with logging enabled)
 
 ```bash
 pg_ctl -D . -l logfile start
 ```
 
-3.2 Check server status
+### 3.2 Check server status
 
 ```bash
 pg_ctl -D . status
 ```
 
-3.3 Read the server logs
+### 3.3 Read the server logs
 
 ```bash
 cat logfile                # Read the entire log
 tail -f logfile            # Follow logs in real-time (useful for debugging)
 ```
 
-3.4 Stop the server
+### 3.4 Stop the server
 
-· Graceful shutdown (waits for queries to finish):
+- Graceful shutdown (waits for queries to finish):
   ```bash
   pg_ctl -D . stop
   ```
-· Fast shutdown (terminates queries immediately):
+- Fast shutdown (terminates queries immediately):
   ```bash
   pg_ctl -D . -m fast stop
   ```
@@ -135,59 +133,59 @@ tail -f logfile            # Follow logs in real-time (useful for debugging)
 
 <!-- SECTION: CONNECTION_NAVIGATION START -->
 
-🔌 4. Database Connection & Navigation
+## 🔌 4. Database Connection & Navigation
 
-Goal: Connect to the psql shell and navigate between databases.
+> **Goal**: Connect to the psql shell and navigate between databases.
 
-4.1 Connect to the default database (postgres)
+### 4.1 Connect to the default database (postgres)
 
 ```bash
 psql -d postgres
 ```
 
-To connect to a specific database with a specific user: psql -d db_name -U user_name
+To connect to a specific database with a specific user: `psql -d db_name -U user_name`
 
-4.2 Inside psql - General Information
+### 4.2 Inside psql - General Information
 
-· Show current connection info:
+- Show current connection info:
   ```sql
   \conninfo
   ```
-· Show current user:
+- Show current user:
   ```sql
   SELECT current_user;
   ```
-· Show current database:
+- Show current database:
   ```sql
   SELECT current_database();
   ```
 
-4.3 Display databases and schemas
+### 4.3 Display databases and schemas
 
-· List all databases:
+- List all databases:
   ```sql
   \l
   ```
-  (If nothing shows up due to the pager, run \pset pager off first)
-· Show databases with their Object IDs (OIDs):
+  (If nothing shows up due to the pager, run `\pset pager off` first)
+- Show databases with their Object IDs (OIDs):
   ```sql
   SELECT oid, datname FROM pg_database;
   ```
-· List all schemas:
+- List all schemas:
   ```sql
   \dn
   ```
 
-4.4 Switch between databases
+### 4.4 Switch between databases
 
-· Connect to a different database:
+- Connect to a different database:
   ```sql
   \c test
   -- Or:
   \connect test
   ```
 
-4.5 Execute Shell commands without exiting
+### 4.5 Execute Shell commands without exiting
 
 ```sql
 \! ls
@@ -196,13 +194,13 @@ To connect to a specific database with a specific user: psql -d db_name -U user_
 \! cat logfile
 ```
 
-4.6 Change the current working directory (inside psql)
+### 4.6 Change the current working directory (inside psql)
 
 ```sql
 \cd ..
 ```
 
-4.7 Exit psql
+### 4.7 Exit psql
 
 ```sql
 \q
@@ -214,17 +212,17 @@ To connect to a specific database with a specific user: psql -d db_name -U user_
 
 <!-- SECTION: DATABASE_MANAGEMENT START -->
 
-🗄️ 5. Database Management (Create/Rename/Drop)
+## 🗄️ 5. Database Management (Create/Rename/Drop)
 
-Goal: Create, rename, and delete databases.
+> **Goal**: Create, rename, and delete databases.
 
-5.1 Create a new database
+### 5.1 Create a new database
 
 ```sql
 CREATE DATABASE test;
 ```
 
-5.2 Rename a database
+### 5.2 Rename a database
 
 ```sql
 ALTER DATABASE test RENAME TO college;
@@ -232,7 +230,7 @@ ALTER DATABASE test RENAME TO college;
 
 (Make sure no active connections are using the database before renaming)
 
-5.3 Drop (delete) a database
+### 5.3 Drop (delete) a database
 
 ```sql
 -- First, connect to a different database (e.g., postgres)
@@ -248,11 +246,11 @@ DROP DATABASE IF EXISTS test;
 
 <!-- SECTION: TABLE_DDL START -->
 
-📋 6. Table & Structure Management (DDL)
+## 📋 6. Table & Structure Management (DDL)
 
-Goal: Create, rename, view, and delete tables.
+> **Goal**: Create, rename, view, and delete tables.
 
-6.1 Create a new table
+### 6.1 Create a new table
 
 ```sql
 CREATE TABLE persons (
@@ -263,7 +261,7 @@ CREATE TABLE persons (
 );
 ```
 
-· Create table only if it doesn't already exist:
+- Create table only if it doesn't already exist:
   ```sql
   CREATE TABLE IF NOT EXISTS persons (
     id INT,
@@ -273,34 +271,34 @@ CREATE TABLE persons (
   );
   ```
 
-6.2 Rename a table
+### 6.2 Rename a table
 
 ```sql
 ALTER TABLE person RENAME TO persons;
 ```
 
-6.3 View table structure
+### 6.3 View table structure
 
-· List tables in the current schema:
+- List tables in the current schema:
   ```sql
   \dt
   ```
-· Show details of a specific table:
+- Show details of a specific table:
   ```sql
   \d persons
   ```
-· Show extended details (size, comments, etc.):
+- Show extended details (size, comments, etc.):
   ```sql
   \d+ persons
   ```
-· SQL query to list tables:
+- SQL query to list tables:
   ```sql
   SELECT table_name
   FROM information_schema.tables
   WHERE table_schema = 'public';
   ```
 
-6.4 Drop (delete) a table
+### 6.4 Drop (delete) a table
 
 ```sql
 DROP TABLE persons;
@@ -314,34 +312,34 @@ DROP TABLE IF EXISTS persons;
 
 <!-- SECTION: DATA_CRUD START -->
 
-✏️ 7. Data Manipulation (CRUD - DML)
+## ✏️ 7. Data Manipulation (CRUD - DML)
 
-Goal: Insert, query, update, and delete data within tables.
+> **Goal**: Insert, query, update, and delete data within tables.
 
-· Insert (CREATE):
+- Insert (CREATE):
   ```sql
   INSERT INTO persons (id, first_name, last_name, address)
   VALUES (1, 'John', 'Doe', 'New York');
   ```
-· Query (READ):
+- Query (READ):
   ```sql
   SELECT * FROM persons;
   SELECT first_name, last_name FROM persons WHERE id = 1;
   ```
-· Update (UPDATE):
+- Update (UPDATE):
   ```sql
   UPDATE persons SET address = 'Los Angeles' WHERE id = 1;
   ```
-· Delete (DELETE):
+- Delete (DELETE):
   ```sql
   DELETE FROM persons WHERE id = 1;
   ```
-· Truncate (remove all rows, keep structure):
+- Truncate (remove all rows, keep structure):
   ```sql
   TRUNCATE TABLE persons;
   ```
 
-🧠 Most Common Data Types
+### 🧠 Most Common Data Types
 
 INT, FLOAT, DOUBLE, DECIMAL, BOOLEAN, VARCHAR, DATE
 
@@ -351,11 +349,11 @@ INT, FLOAT, DOUBLE, DECIMAL, BOOLEAN, VARCHAR, DATE
 
 <!-- SECTION: USERS_DCL START -->
 
-👥 8. User & Privileges Management (DCL)
+## 👥 8. User & Privileges Management (DCL)
 
-Goal: Create users, grant permissions, and manage roles.
+> **Goal**: Create users, grant permissions, and manage roles.
 
-8.1 Create a new user (role)
+### 8.1 Create a new user (role)
 
 ```sql
 CREATE USER jane WITH PASSWORD 'secure123';
@@ -363,13 +361,13 @@ CREATE USER jane WITH PASSWORD 'secure123';
 CREATE ROLE jane WITH LOGIN PASSWORD 'secure123';
 ```
 
-8.2 Grant access permissions to a database
+### 8.2 Grant access permissions to a database
 
 ```sql
 GRANT CONNECT ON DATABASE college TO jane;
 ```
 
-8.3 Grant permissions on a specific table
+### 8.3 Grant permissions on a specific table
 
 ```sql
 -- Grant read, insert, update, and delete:
@@ -379,19 +377,19 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON persons TO jane;
 GRANT ALL PRIVILEGES ON persons TO jane;
 ```
 
-8.4 Grant database creation privileges
+### 8.4 Grant database creation privileges
 
 ```sql
 ALTER USER jane CREATEDB;
 ```
 
-8.5 Change a user's password
+### 8.5 Change a user's password
 
 ```sql
 ALTER USER jane WITH PASSWORD 'new_password';
 ```
 
-8.6 Drop a user
+### 8.6 Drop a user
 
 ```sql
 DROP USER jane;
@@ -399,7 +397,7 @@ DROP USER jane;
 DROP ROLE jane;
 ```
 
-8.7 View users and roles
+### 8.7 View users and roles
 
 ```sql
 \du
@@ -413,11 +411,11 @@ SELECT rolname FROM pg_roles;
 
 <!-- SECTION: BACKUP_RESTORE START -->
 
-💾 9. Backup & Restore
+## 💾 9. Backup & Restore
 
-Goal: Create backups of databases and restore them later.
+> **Goal**: Create backups of databases and restore them later.
 
-9.1 Dump a database to a plain SQL file (Text format)
+### 9.1 Dump a database to a plain SQL file (Text format)
 
 ```bash
 pg_dump -d database_name > backup.sql
@@ -425,19 +423,19 @@ pg_dump -d database_name > backup.sql
 pg_dump -U username -d database_name > backup.sql
 ```
 
-9.2 Dump in custom format (recommended for pg_restore)
+### 9.2 Dump in custom format (recommended for pg_restore)
 
 ```bash
 pg_dump -Fc -d database_name > backup.dump
 ```
 
-9.3 Restore from a plain SQL file
+### 9.3 Restore from a plain SQL file
 
 ```bash
 psql -d database_name < backup.sql
 ```
 
-9.4 Restore from a custom format file
+### 9.4 Restore from a custom format file
 
 ```bash
 pg_restore -d database_name backup.dump
@@ -449,11 +447,11 @@ pg_restore -d database_name backup.dump
 
 <!-- SECTION: UTILITIES START -->
 
-🛠️ 10. Utilities & Extras
+## 🛠️ 10. Utilities & Extras
 
-Goal: Additional commands and configurations to enhance daily workflows.
+> **Goal**: Additional commands and configurations to enhance daily workflows.
 
-10.1 Set PGDATA environment variable (to avoid typing -D .)
+### 10.1 Set PGDATA environment variable (to avoid typing -D .)
 
 Add this to your ~/.bashrc or ~/.zshrc:
 
@@ -468,26 +466,26 @@ pg_ctl start -l logfile
 pg_ctl status
 ```
 
-10.2 View database size
+### 10.2 View database size
 
 ```sql
 SELECT pg_database_size('database_name') / 1024 / 1024 AS size_mb;
 ```
 
-10.3 View active connections / processes
+### 10.3 View active connections / processes
 
 ```sql
 SELECT pid, usename, application_name, client_addr, state, query
 FROM pg_stat_activity;
 ```
 
-10.4 Terminate a stuck process (using PID)
+### 10.4 Terminate a stuck process (using PID)
 
 ```sql
 SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE pid = 12345;
 ```
 
-10.5 Performance tuning
+### 10.5 Performance tuning
 
 Edit the postgresql.conf file located in the data directory to change ports, memory settings, etc.
 
@@ -497,7 +495,7 @@ Edit the postgresql.conf file located in the data directory to change ports, mem
 
 <!-- SECTION: WORKFLOW START -->
 
-🔁 11. Typical Workflow
+## 🔁 11. Typical Workflow
 
 Here is the most common daily routine for starting, working, and stopping your session:
 
@@ -531,8 +529,8 @@ pg_ctl -D . stop
 
 ---
 
-📝 Final Notes
+## 📝 Final Notes
 
-· All commands are tailored to work within the Termux environment on Android.
-· To add new information, simply search for the <!-- SECTION: ... START --> and <!-- SECTION: ... END --> comments and insert your content between them.
-· Happy learning and coding with PostgreSQL! 🎉
+- All commands are tailored to work within the Termux environment on Android.
+- To add new information, simply search for the `<!-- SECTION: ... START -->` and `<!-- SECTION: ... END -->` comments and insert your content between them.
+- Happy learning and coding with PostgreSQL! 🎉
