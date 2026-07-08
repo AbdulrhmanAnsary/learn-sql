@@ -1,0 +1,394 @@
+2026-07-05 18:47:56.046 EEST [24740] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-05 18:47:56.050 EEST [24740] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-05 18:47:56.053 EEST [24740] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-05 18:47:56.078 EEST [24749] LOG:  database system was shut down at 2026-07-05 17:44:48 EEST
+2026-07-05 18:47:56.105 EEST [24740] LOG:  database system is ready to accept connections
+2026-07-05 18:52:56.177 EEST [24747] LOG:  checkpoint starting: time
+2026-07-05 18:52:59.172 EEST [24747] LOG:  checkpoint complete: wrote 29 buffers (0.2%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.944 s, sync=0.017 s, total=2.996 s; sync files=10, longest=0.010 s, average=0.002 s; distance=211 kB, estimate=211 kB; lsn=0/1798968, redo lsn=0/1798910
+2026-07-05 19:02:23.570 EEST [26691] FATAL:  database "u0_a653" does not exist
+2026-07-05 19:02:56.371 EEST [24747] LOG:  checkpoint starting: time
+2026-07-05 19:02:56.520 EEST [24747] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.108 s, sync=0.009 s, total=0.150 s; sync files=1, longest=0.009 s, average=0.009 s; distance=8 kB, estimate=191 kB; lsn=0/179AAF8, redo lsn=0/179AAA0
+2026-07-05 19:04:08.864 EEST [27004] FATAL:  database "u0_a653" does not exist
+2026-07-05 19:04:35.383 EEST [27190] FATAL:  database "u0_a653" does not exist
+2026-07-05 19:06:33.608 EEST [29310] FATAL:  database "u0_a653" does not exist
+2026-07-05 19:07:27.749 EEST [29588] FATAL:  database "u0_a653" does not exist
+2026-07-05 19:07:31.502 EEST [29614] FATAL:  database "u0_a653" does not exist
+2026-07-05 19:07:32.799 EEST [29630] FATAL:  database "u0_a653" does not exist
+2026-07-05 19:11:21.951 EEST [30048] FATAL:  database "u0_a653" does not exist
+2026-07-05 19:24:51.666 EEST [30978] ERROR:  syntax error at or near "clear" at character 1
+2026-07-05 19:24:51.666 EEST [30978] STATEMENT:  clear
+	cls
+	l
+	s
+	.clear
+	/
+	/healp
+	help
+	SELECT current_user;
+2026-07-05 19:26:11.085 EEST [30978] ERROR:  column "current_database" does not exist at character 8
+2026-07-05 19:26:11.085 EEST [30978] STATEMENT:  SELECT current_database;
+2026-07-05 19:26:13.416 EEST [30978] ERROR:  column "current_database" does not exist at character 8
+2026-07-05 19:26:13.416 EEST [30978] STATEMENT:  SELECT current_database;
+2026-07-05 19:26:16.432 EEST [30978] ERROR:  column "current_database" does not exist at character 8
+2026-07-05 19:26:16.432 EEST [30978] STATEMENT:  SELECT current_database;
+2026-07-05 19:26:31.871 EEST [30978] ERROR:  syntax error at or near "(" at character 20
+2026-07-05 19:26:31.871 EEST [30978] STATEMENT:  SELECT current_user();
+2026-07-05 19:32:26.752 EEST [4540] ERROR:  syntax error at or near "(" at character 20
+2026-07-05 19:32:26.752 EEST [4540] STATEMENT:  SELECT current_user();
+2026-07-05 19:36:36.590 EEST [4540] ERROR:  syntax error at or near "ls" at character 1
+2026-07-05 19:36:36.590 EEST [4540] STATEMENT:  ls
+	CREATE DATABASE college;
+2026-07-05 19:37:57.121 EEST [24747] LOG:  checkpoint starting: time
+2026-07-05 19:39:32.775 EEST [24747] LOG:  checkpoint complete: wrote 948 buffers (5.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=95.569 s, sync=0.038 s, total=95.657 s; sync files=302, longest=0.008 s, average=0.001 s; distance=4396 kB, estimate=4396 kB; lsn=0/1BE5D90, redo lsn=0/1BE5D00
+2026-07-05 19:48:53.771 EEST [7764] ERROR:  cannot drop the currently open database
+2026-07-05 19:48:53.771 EEST [7764] STATEMENT:  DROP DATABASE college;
+2026-07-05 19:49:13.016 EEST [24747] LOG:  checkpoint starting: immediate force wait
+2026-07-05 19:49:13.052 EEST [24747] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.001 s, total=0.036 s; sync files=1, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=3957 kB; lsn=0/1BE6220, redo lsn=0/1BE61C8
+2026-07-05 19:52:21.047 EEST [24740] LOG:  received fast shutdown request
+2026-07-05 19:52:21.049 EEST [24740] LOG:  aborting any active transactions
+2026-07-05 19:52:21.057 EEST [24740] LOG:  background worker "logical replication launcher" (PID 24752) exited with exit code 1
+2026-07-05 19:52:21.063 EEST [24747] LOG:  shutting down
+2026-07-05 19:52:21.064 EEST [24747] LOG:  checkpoint starting: shutdown immediate
+2026-07-05 19:52:21.104 EEST [24747] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.041 s; sync files=2, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=3561 kB; lsn=0/1BE66B0, redo lsn=0/1BE66B0
+2026-07-05 19:52:21.152 EEST [24740] LOG:  database system is shut down
+2026-07-06 02:11:01.424 EEST [31417] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-06 02:11:01.429 EEST [31417] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-06 02:11:01.432 EEST [31417] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-06 02:11:01.511 EEST [31426] LOG:  database system was shut down at 2026-07-05 19:52:21 EEST
+2026-07-06 02:11:01.542 EEST [31417] LOG:  database system is ready to accept connections
+2026-07-06 02:13:32.072 EEST [31606] FATAL:  database "test" does not exist
+2026-07-06 02:15:03.302 EEST [31878] FATAL:  database "u0_a653" does not exist
+2026-07-06 02:16:01.609 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 02:16:01.656 EEST [31424] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.002 s, total=0.048 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1BE67B8, redo lsn=0/1BE6760
+2026-07-06 02:17:29.389 EEST [32139] FATAL:  role "test" does not exist
+2026-07-06 02:17:47.563 EEST [32162] FATAL:  database "u0_a653" does not exist
+2026-07-06 02:20:49.957 EEST [1528] ERROR:  syntax error at or near "SQL" at character 1
+2026-07-06 02:20:49.957 EEST [1528] STATEMENT:  SQL statement;
+2026-07-06 02:20:52.297 EEST [1548] ERROR:  syntax error at or near "SQL" at character 1
+2026-07-06 02:20:52.297 EEST [1548] STATEMENT:  SQL statement;
+2026-07-06 02:21:34.581 EEST [1780] FATAL:  database "u0_a653" does not exist
+2026-07-06 02:22:11.449 EEST [1917] FATAL:  database "u0_a653" does not exist
+2026-07-06 02:26:01.850 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 02:26:51.270 EEST [3454] FATAL:  database "u0_a653" does not exist
+2026-07-06 02:26:52.444 EEST [3478] FATAL:  database "u0_a653" does not exist
+2026-07-06 02:27:37.683 EEST [31424] LOG:  checkpoint complete: wrote 948 buffers (5.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=95.601 s, sync=0.122 s, total=95.834 s; sync files=302, longest=0.007 s, average=0.001 s; distance=4396 kB, estimate=4396 kB; lsn=0/2031B48, redo lsn=0/2031AB8
+2026-07-06 02:31:01.785 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 02:31:04.782 EEST [31424] LOG:  checkpoint complete: wrote 29 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.924 s, sync=0.027 s, total=2.998 s; sync files=27, longest=0.008 s, average=0.001 s; distance=137 kB, estimate=3970 kB; lsn=0/2053FA0, redo lsn=0/2053F48
+2026-07-06 02:36:01.880 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 02:36:02.847 EEST [31424] LOG:  checkpoint complete: wrote 9 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.918 s, sync=0.021 s, total=0.967 s; sync files=9, longest=0.008 s, average=0.003 s; distance=45 kB, estimate=3578 kB; lsn=0/205F558, redo lsn=0/205F4C8
+2026-07-06 02:38:17.639 EEST [5290] ERROR:  syntax error at or near "l" at character 1
+2026-07-06 02:38:17.639 EEST [5290] STATEMENT:  l
+	SELECT table_name
+	FROM information_schema.tables
+	WHERE table_schema = 'public';
+2026-07-06 02:41:01.948 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 02:41:02.807 EEST [31424] LOG:  checkpoint complete: wrote 8 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.812 s, sync=0.012 s, total=0.860 s; sync files=4, longest=0.008 s, average=0.003 s; distance=48 kB, estimate=3225 kB; lsn=0/206B548, redo lsn=0/206B4F0
+2026-07-06 03:11:02.399 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 03:11:02.883 EEST [31424] LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.424 s, sync=0.004 s, total=0.484 s; sync files=2, longest=0.003 s, average=0.002 s; distance=32 kB, estimate=2905 kB; lsn=0/2073600, redo lsn=0/20735A8
+2026-07-06 03:19:13.119 EEST [5290] ERROR:  cannot drop the currently open database
+2026-07-06 03:19:13.119 EEST [5290] STATEMENT:  DROP DATABASE test;
+2026-07-06 03:19:27.582 EEST [31424] LOG:  checkpoint starting: immediate force wait
+2026-07-06 03:19:27.624 EEST [31424] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.001 s, total=0.042 s; sync files=1, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=2615 kB; lsn=0/2073B10, redo lsn=0/2073AB8
+2026-07-06 03:24:27.725 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 03:24:27.863 EEST [31424] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.106 s, sync=0.002 s, total=0.139 s; sync files=2, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=2354 kB; lsn=0/20740A0, redo lsn=0/2074048
+2026-07-06 03:37:18.469 EEST [14720] ERROR:  database "harmash" already exists
+2026-07-06 03:37:18.469 EEST [14720] STATEMENT:  CREATE DATABASE harmash;
+2026-07-06 03:37:35.273 EEST [14815] ERROR:  database "harmash" already exists
+2026-07-06 03:37:35.273 EEST [14815] STATEMENT:  CREATE DATABASE harmash;
+2026-07-06 03:38:41.318 EEST [14825] ERROR:  syntax error at or near "NOT" at character 20
+2026-07-06 03:38:41.318 EEST [14825] STATEMENT:  CREATE DATABASE IF NOT EXISTS harmash;
+2026-07-06 03:39:00.479 EEST [14825] ERROR:  syntax error at or near "NOT" at character 20
+2026-07-06 03:39:00.479 EEST [14825] STATEMENT:  CREATE DATABASE IF NOT EXISTS harmash;
+2026-07-06 03:39:02.228 EEST [14825] ERROR:  syntax error at or near "NOT" at character 20
+2026-07-06 03:39:02.228 EEST [14825] STATEMENT:  CREATE DATABASE IF NOT EXISTS harmash;
+2026-07-06 03:39:28.142 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 03:39:46.197 EEST [14825] ERROR:  syntax error at or near "NOT" at character 20
+2026-07-06 03:39:46.197 EEST [14825] STATEMENT:  CREATE DATABASE IF NOT EXISTS harmash;
+2026-07-06 03:39:50.993 EEST [14825] ERROR:  syntax error at or near "NOT" at character 20
+2026-07-06 03:39:50.993 EEST [14825] STATEMENT:  CREATE DATABASE IF NOT EXISTS harmash;
+2026-07-06 03:41:03.972 EEST [31424] LOG:  checkpoint complete: wrote 948 buffers (5.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=95.595 s, sync=0.184 s, total=95.831 s; sync files=302, longest=0.007 s, average=0.001 s; distance=4396 kB, estimate=4396 kB; lsn=0/24BF4B0, redo lsn=0/24BF420
+2026-07-06 03:53:57.307 EEST [14825] ERROR:  syntax error at or near "createdb" at character 1
+2026-07-06 03:53:57.307 EEST [14825] STATEMENT:  createdb
+	DROP DATABASE
+	;
+2026-07-06 03:54:12.137 EEST [14825] ERROR:  syntax error at or near ";" at character 14
+2026-07-06 03:54:12.137 EEST [14825] STATEMENT:  DROP DATABASE;
+2026-07-06 03:54:29.930 EEST [14825] ERROR:  cannot drop the currently open database
+2026-07-06 03:54:29.930 EEST [14825] STATEMENT:  DROP DATABASE harmash;
+2026-07-06 03:54:59.362 EEST [31424] LOG:  checkpoint starting: immediate force wait
+2026-07-06 03:54:59.401 EEST [31424] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.001 s, total=0.039 s; sync files=1, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=3957 kB; lsn=0/24BFA50, redo lsn=0/24BF9F8
+2026-07-06 03:55:21.747 EEST [18877] ERROR:  database "harmash" does not exist
+2026-07-06 03:55:21.747 EEST [18877] STATEMENT:  DROP DATABASE harmash;
+2026-07-06 03:56:34.630 EEST [18877] ERROR:  database "harmash" does not exist
+2026-07-06 03:56:34.630 EEST [18877] STATEMENT:  DROP DATABASE harmash;
+2026-07-06 03:58:53.205 EEST [31424] LOG:  checkpoint starting: immediate force wait
+2026-07-06 03:58:53.246 EEST [31424] LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.002 s, total=0.041 s; sync files=4, longest=0.001 s, average=0.001 s; distance=4397 kB, estimate=4397 kB; lsn=0/290B150, redo lsn=0/290B0F8
+2026-07-06 04:03:53.349 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 04:03:53.517 EEST [31424] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.110 s, sync=0.002 s, total=0.173 s; sync files=2, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=3958 kB; lsn=0/290B7F0, redo lsn=0/290B798
+2026-07-06 04:18:53.797 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 04:20:24.485 EEST [21389] ERROR:  relation "books" already exists
+2026-07-06 04:20:24.485 EEST [21389] STATEMENT:  CREATE TABLE books (
+	title VARCHAR(200),
+	number_of_pages INT,
+	auther_name VARCHAR(50),
+	publishing_date DATE
+	);
+2026-07-06 04:20:29.169 EEST [31424] LOG:  checkpoint complete: wrote 948 buffers (5.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=95.205 s, sync=0.133 s, total=95.373 s; sync files=303, longest=0.007 s, average=0.001 s; distance=4397 kB, estimate=4397 kB; lsn=0/2D6D6A0, redo lsn=0/2D56D08
+2026-07-06 04:20:48.212 EEST [21389] ERROR:  syntax error at or near "EXISTS" at character 17
+2026-07-06 04:20:48.212 EEST [21389] STATEMENT:  CREATE TABLE IF EXISTS books (
+	title VARCHAR(200),
+	number_of_pages INT,
+	auther_name VARCHAR(50),
+	publishing_date DATE
+	);
+2026-07-06 04:20:54.990 EEST [21389] ERROR:  syntax error at or near "EXISTS" at character 17
+2026-07-06 04:20:54.990 EEST [21389] STATEMENT:  CREATE TABLE IF EXISTS books (
+	title VARCHAR(200),
+	number_of_pages INT,
+	auther_name VARCHAR(50),
+	publishing_date DATE
+	);
+2026-07-06 04:23:53.269 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 04:23:54.062 EEST [31424] LOG:  checkpoint complete: wrote 7 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.717 s, sync=0.016 s, total=0.794 s; sync files=8, longest=0.003 s, average=0.002 s; distance=98 kB, estimate=3967 kB; lsn=0/2D6F7A8, redo lsn=0/2D6F750
+2026-07-06 04:28:53.135 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 04:28:53.479 EEST [31424] LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.309 s, sync=0.007 s, total=0.345 s; sync files=1, longest=0.007 s, average=0.007 s; distance=23 kB, estimate=3573 kB; lsn=0/2D755C0, redo lsn=0/2D75568
+2026-07-06 04:33:53.579 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 04:33:54.442 EEST [31424] LOG:  checkpoint complete: wrote 8 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.823 s, sync=0.003 s, total=0.864 s; sync files=3, longest=0.002 s, average=0.001 s; distance=61 kB, estimate=3221 kB; lsn=0/2D84AE0, redo lsn=0/2D84A88
+2026-07-06 04:38:53.507 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 04:38:53.774 EEST [31424] LOG:  checkpoint complete: wrote 2 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.207 s, sync=0.006 s, total=0.268 s; sync files=1, longest=0.006 s, average=0.006 s; distance=15 kB, estimate=2901 kB; lsn=0/2D88868, redo lsn=0/2D88810
+2026-07-06 04:42:03.385 EEST [31424] LOG:  checkpoint starting: immediate force wait
+2026-07-06 04:42:03.746 EEST [31424] LOG:  checkpoint complete: wrote 948 buffers (5.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.058 s, sync=0.175 s, total=0.361 s; sync files=302, longest=0.016 s, average=0.001 s; distance=4397 kB, estimate=4397 kB; lsn=0/31D3FC8, redo lsn=0/31D3F70
+2026-07-06 04:45:27.204 EEST [31424] LOG:  checkpoint starting: immediate force wait
+2026-07-06 04:45:27.224 EEST [31424] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.021 s; sync files=2, longest=0.001 s, average=0.001 s; distance=171 kB, estimate=3975 kB; lsn=0/31FEDC0, redo lsn=0/31FED68
+2026-07-06 04:50:27.325 EEST [31424] LOG:  checkpoint starting: time
+2026-07-06 04:50:27.458 EEST [31424] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.107 s, sync=0.003 s, total=0.133 s; sync files=2, longest=0.003 s, average=0.002 s; distance=1 kB, estimate=3577 kB; lsn=0/31FF588, redo lsn=0/31FF530
+2026-07-06 04:50:31.528 EEST [31417] LOG:  received fast shutdown request
+2026-07-06 04:50:31.533 EEST [31417] LOG:  aborting any active transactions
+2026-07-06 04:50:31.541 EEST [31417] LOG:  background worker "logical replication launcher" (PID 31429) exited with exit code 1
+2026-07-06 04:50:31.545 EEST [31424] LOG:  shutting down
+2026-07-06 04:50:31.546 EEST [31424] LOG:  checkpoint starting: shutdown immediate
+2026-07-06 04:50:31.568 EEST [31424] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.023 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3220 kB; lsn=0/31FF600, redo lsn=0/31FF600
+2026-07-06 04:50:31.626 EEST [31417] LOG:  database system is shut down
+2026-07-06 23:09:40.559 EEST [13654] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-06 23:09:40.562 EEST [13654] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-06 23:09:40.564 EEST [13654] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-06 23:09:40.620 EEST [13663] LOG:  database system was shut down at 2026-07-06 04:50:31 EEST
+2026-07-06 23:09:40.648 EEST [13654] LOG:  database system is ready to accept connections
+2026-07-06 23:11:03.647 EEST [13811] FATAL:  database "u0_a653" does not exist
+2026-07-06 23:12:15.699 EEST [13870] ERROR:  syntax error at or near "CREAT" at character 1
+2026-07-06 23:12:15.699 EEST [13870] STATEMENT:  CREAT TABLE products;
+2026-07-06 23:12:27.342 EEST [13870] ERROR:  syntax error at or near ";" at character 22
+2026-07-06 23:12:27.342 EEST [13870] STATEMENT:  CREATE TABLE products;
+2026-07-06 23:13:20.987 EEST [13870] ERROR:  syntax error at or near "CREAT" at character 1
+2026-07-06 23:13:20.987 EEST [13870] STATEMENT:  CREAT TABLE products;
+2026-07-06 23:13:26.549 EEST [13870] ERROR:  syntax error at or near "CREAT" at character 1
+2026-07-06 23:13:26.549 EEST [13870] STATEMENT:  CREAT TABLE products();
+2026-07-06 23:14:40.715 EEST [13661] LOG:  checkpoint starting: time
+2026-07-06 23:16:17.222 EEST [13661] LOG:  checkpoint complete: wrote 948 buffers (5.8%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=96.239 s, sync=0.222 s, total=96.508 s; sync files=303, longest=0.004 s, average=0.001 s; distance=4397 kB, estimate=4397 kB; lsn=0/364AD78, redo lsn=0/364ACE8
+2026-07-06 23:26:24.757 EEST [13870] ERROR:  syntax error at or near "TABLE" at character 20
+2026-07-06 23:26:24.757 EEST [13870] STATEMENT:  CREATE TABLE CREAT TABLE products(
+	title VARCHAR(30),
+	description VARCHAR(255),
+	production_date DATE,
+	expiry_date DATE,
+	price DECIMAL(3,2)
+	);
+2026-07-06 23:29:40.505 EEST [13661] LOG:  checkpoint starting: time
+2026-07-06 23:29:43.282 EEST [13661] LOG:  checkpoint complete: wrote 26 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.691 s, sync=0.017 s, total=2.778 s; sync files=21, longest=0.006 s, average=0.001 s; distance=131 kB, estimate=3971 kB; lsn=0/366BAD8, redo lsn=0/366BA80
+2026-07-07 00:18:08.728 EEST [13870] ERROR:  syntax error at or near "TAEBLE" at character 6
+2026-07-07 00:18:08.728 EEST [13870] STATEMENT:  DROP TAEBLE;
+2026-07-07 00:18:33.936 EEST [13870] ERROR:  syntax error at or near "TAEBLE" at character 6
+2026-07-07 00:18:33.936 EEST [13870] STATEMENT:  DROP TAEBLE products;
+2026-07-07 00:18:40.697 EEST [13870] ERROR:  syntax error at or near "TAEBLE" at character 6
+2026-07-07 00:18:40.697 EEST [13870] STATEMENT:  DROP TAEBLE products;
+2026-07-07 00:19:59.196 EEST [13661] LOG:  checkpoint starting: immediate force wait
+2026-07-07 00:19:59.247 EEST [13661] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.001 s, total=0.052 s; sync files=2, longest=0.001 s, average=0.001 s; distance=84 kB, estimate=3582 kB; lsn=0/3680C18, redo lsn=0/3680BC0
+2026-07-07 00:24:59.351 EEST [13661] LOG:  checkpoint starting: time
+2026-07-07 00:24:59.495 EEST [13661] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.108 s, sync=0.002 s, total=0.149 s; sync files=2, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=3224 kB; lsn=0/3681478, redo lsn=0/3681420
+2026-07-07 00:27:08.630 EEST [13654] LOG:  received fast shutdown request
+2026-07-07 00:27:08.631 EEST [13654] LOG:  aborting any active transactions
+2026-07-07 00:27:08.640 EEST [13654] LOG:  background worker "logical replication launcher" (PID 13666) exited with exit code 1
+2026-07-07 00:27:08.643 EEST [13661] LOG:  shutting down
+2026-07-07 00:27:08.645 EEST [13661] LOG:  checkpoint starting: shutdown immediate
+2026-07-07 00:27:08.675 EEST [13661] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.032 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=2901 kB; lsn=0/3681528, redo lsn=0/3681528
+2026-07-07 00:27:08.725 EEST [13654] LOG:  database system is shut down
+2026-07-07 21:07:12.253 EEST [28854] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-07 21:07:12.256 EEST [28854] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-07 21:07:12.259 EEST [28854] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-07 21:07:12.272 EEST [28863] LOG:  database system was shut down at 2026-07-07 21:06:30 EEST
+2026-07-07 21:07:12.285 EEST [28854] LOG:  database system is ready to accept connections
+2026-07-07 21:08:13.364 EEST [29031] ERROR:  syntax error at or near "test" at character 1
+2026-07-07 21:08:13.364 EEST [29031] STATEMENT:  test.db
+2026-07-07 21:08:22.999 EEST [29052] FATAL:  database "-" does not exist
+2026-07-07 21:08:26.572 EEST [29068] FATAL:  database "-" does not exist
+2026-07-07 21:09:40.770 EEST [29296] ERROR:  syntax error at or near "USE" at character 1
+2026-07-07 21:09:40.770 EEST [29296] STATEMENT:  USE harmash;
+2026-07-07 21:09:46.628 EEST [28861] LOG:  checkpoint starting: immediate force wait
+2026-07-07 21:09:46.722 EEST [28861] LOG:  checkpoint complete: wrote 25 buffers (0.2%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.011 s, total=0.094 s; sync files=24, longest=0.001 s, average=0.001 s; distance=4497 kB, estimate=4497 kB; lsn=0/3AE5B48, redo lsn=0/3AE5AF0
+2026-07-07 21:09:47.012 EEST [29308] ERROR:  syntax error at or near "USE" at character 1
+2026-07-07 21:09:47.012 EEST [29308] STATEMENT:  USE harmash;
+2026-07-07 21:09:47.014 EEST [29308] ERROR:  relation "users" already exists
+2026-07-07 21:09:47.014 EEST [29308] STATEMENT:  CREATE TABLE users (
+	    username VARCHAR(30),
+	    email    VARCHAR(50),
+	    phone    VARCHAR(20)
+	);
+2026-07-07 21:10:07.015 EEST [29335] FATAL:  database "u0_a653" does not exist
+2026-07-07 21:10:17.389 EEST [29351] FATAL:  database "u0_a653" does not exist
+2026-07-07 21:11:12.792 EEST [29463] FATAL:  database "u0_a653" does not exist
+2026-07-07 21:11:28.973 EEST [29489] FATAL:  database "u0_a653" does not exist
+2026-07-07 21:11:32.108 EEST [28861] LOG:  checkpoint starting: immediate force wait
+2026-07-07 21:11:32.167 EEST [28861] LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.003 s, total=0.060 s; sync files=4, longest=0.001 s, average=0.001 s; distance=4398 kB, estimate=4487 kB; lsn=0/3F31518, redo lsn=0/3F314C0
+2026-07-07 21:12:29.696 EEST [29601] FATAL:  database "u0_a653" does not exist
+2026-07-07 21:12:42.907 EEST [29627] FATAL:  database "-" does not exist
+2026-07-07 21:13:29.713 EEST [29681] ERROR:  syntax error at or near "USE" at character 1
+2026-07-07 21:13:29.713 EEST [29681] STATEMENT:  USE harmash;
+2026-07-07 21:13:29.715 EEST [29681] ERROR:  relation "users" already exists
+2026-07-07 21:13:29.715 EEST [29681] STATEMENT:  CREATE TABLE users (
+	    username VARCHAR(30),
+	    email    VARCHAR(50),
+	    phone    VARCHAR(20)
+	);
+2026-07-07 21:16:12.975 EEST [29937] FATAL:  database "u0_a653" does not exist
+2026-07-07 21:16:19.087 EEST [28861] LOG:  checkpoint starting: immediate force wait
+2026-07-07 21:16:19.129 EEST [28861] LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.005 s, sync=0.002 s, total=0.042 s; sync files=4, longest=0.001 s, average=0.001 s; distance=4398 kB, estimate=4478 kB; lsn=0/437D068, redo lsn=0/437D010
+2026-07-07 21:21:19.212 EEST [28861] LOG:  checkpoint starting: time
+2026-07-07 21:21:19.416 EEST [28861] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.118 s, sync=0.003 s, total=0.207 s; sync files=2, longest=0.002 s, average=0.002 s; distance=2 kB, estimate=4030 kB; lsn=0/437DAB8, redo lsn=0/437DA60
+2026-07-08 04:06:58.825 EEST [7080] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 04:06:58.829 EEST [7080] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 04:06:58.834 EEST [7080] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 04:06:58.924 EEST [7090] LOG:  database system was interrupted; last known up at 2026-07-07 21:21:19 EEST
+2026-07-08 04:06:59.126 EEST [7090] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-07-08 04:06:59.134 EEST [7090] LOG:  redo starts at 0/437DA60
+2026-07-08 04:06:59.134 EEST [7090] LOG:  invalid record length at 0/437DB68: expected at least 24, got 0
+2026-07-08 04:06:59.134 EEST [7090] LOG:  redo done at 0/437DB30 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-07-08 04:06:59.157 EEST [7088] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-07-08 04:06:59.192 EEST [7088] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.002 s, total=0.036 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/437DB68, redo lsn=0/437DB68
+2026-07-08 04:06:59.201 EEST [7080] LOG:  database system is ready to accept connections
+2026-07-08 04:07:53.116 EEST [7080] LOG:  received fast shutdown request
+2026-07-08 04:07:53.123 EEST [7080] LOG:  aborting any active transactions
+2026-07-08 04:07:53.129 EEST [7080] LOG:  background worker "logical replication launcher" (PID 7093) exited with exit code 1
+2026-07-08 04:07:53.130 EEST [7088] LOG:  shutting down
+2026-07-08 04:07:53.131 EEST [7088] LOG:  checkpoint starting: shutdown immediate
+2026-07-08 04:07:53.180 EEST [7088] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.050 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/437DC18, redo lsn=0/437DC18
+2026-07-08 04:07:53.222 EEST [7080] LOG:  database system is shut down
+2026-07-08 04:17:16.594 EEST [8772] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 04:17:16.596 EEST [8772] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 04:17:16.598 EEST [8772] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 04:17:16.612 EEST [8781] LOG:  database system was shut down at 2026-07-08 04:07:53 EEST
+2026-07-08 04:17:16.625 EEST [8772] LOG:  database system is ready to accept connections
+2026-07-08 04:22:16.706 EEST [8779] LOG:  checkpoint starting: time
+2026-07-08 04:22:16.867 EEST [8779] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.107 s, sync=0.003 s, total=0.161 s; sync files=3, longest=0.002 s, average=0.001 s; distance=7 kB, estimate=7 kB; lsn=0/437F938, redo lsn=0/437F8E0
+2026-07-08 04:39:12.157 EEST [8772] LOG:  received fast shutdown request
+2026-07-08 04:39:12.163 EEST [8772] LOG:  aborting any active transactions
+2026-07-08 04:39:12.169 EEST [8772] LOG:  background worker "logical replication launcher" (PID 8784) exited with exit code 1
+2026-07-08 04:39:12.172 EEST [8779] LOG:  shutting down
+2026-07-08 04:39:12.173 EEST [8779] LOG:  checkpoint starting: shutdown immediate
+2026-07-08 04:39:12.212 EEST [8779] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.041 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=6 kB; lsn=0/437F9E8, redo lsn=0/437F9E8
+2026-07-08 04:39:12.249 EEST [8772] LOG:  database system is shut down
+2026-07-08 04:40:23.525 EEST [11982] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 04:40:23.527 EEST [11982] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 04:40:23.530 EEST [11982] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 04:40:23.586 EEST [11991] LOG:  database system was shut down at 2026-07-08 04:39:12 EEST
+2026-07-08 04:40:23.598 EEST [11982] LOG:  database system is ready to accept connections
+2026-07-08 04:41:53.047 EEST [12108] FATAL:  lock file "postmaster.pid" already exists
+2026-07-08 04:41:53.047 EEST [12108] HINT:  Is another postmaster (PID 11982) running in data directory "/data/data/com.termux/files/home/projects/backendProjects/postgresqlProjects"?
+2026-07-08 04:45:23.685 EEST [11989] LOG:  checkpoint starting: time
+2026-07-08 04:46:59.155 EEST [11989] LOG:  checkpoint complete: wrote 948 buffers (5.8%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=95.304 s, sync=0.125 s, total=95.471 s; sync files=303, longest=0.007 s, average=0.001 s; distance=4398 kB, estimate=4398 kB; lsn=0/47CB3E0, redo lsn=0/47CB350
+2026-07-08 05:42:09.491 EEST [19566] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 05:42:09.494 EEST [19566] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 05:42:09.498 EEST [19566] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 05:42:09.564 EEST [19575] LOG:  database system was interrupted; last known up at 2026-07-08 04:46:59 EEST
+2026-07-08 05:42:10.032 EEST [19575] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-07-08 05:42:10.041 EEST [19575] LOG:  redo starts at 0/47CB350
+2026-07-08 05:42:10.041 EEST [19575] LOG:  invalid record length at 0/47CB490: expected at least 24, got 0
+2026-07-08 05:42:10.041 EEST [19575] LOG:  redo done at 0/47CB458 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-07-08 05:42:10.063 EEST [19573] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-07-08 05:42:10.093 EEST [19573] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.002 s, total=0.032 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/47CB490, redo lsn=0/47CB490
+2026-07-08 05:42:10.104 EEST [19566] LOG:  database system is ready to accept connections
+2026-07-08 05:42:19.046 EEST [19566] LOG:  received fast shutdown request
+2026-07-08 05:42:19.047 EEST [19566] LOG:  aborting any active transactions
+2026-07-08 05:42:19.053 EEST [19566] LOG:  background worker "logical replication launcher" (PID 19579) exited with exit code 1
+2026-07-08 05:42:19.054 EEST [19573] LOG:  shutting down
+2026-07-08 05:42:19.056 EEST [19573] LOG:  checkpoint starting: shutdown immediate
+2026-07-08 05:42:19.091 EEST [19573] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.036 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/47CB508, redo lsn=0/47CB508
+2026-07-08 05:42:19.126 EEST [19566] LOG:  database system is shut down
+2026-07-08 06:16:31.561 EEST [25141] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 06:16:31.563 EEST [25141] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 06:16:31.566 EEST [25141] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 06:16:31.655 EEST [25150] LOG:  database system was shut down at 2026-07-08 05:42:19 EEST
+2026-07-08 06:16:31.678 EEST [25141] LOG:  database system is ready to accept connections
+2026-07-08 06:17:14.780 EEST [25141] LOG:  received fast shutdown request
+2026-07-08 06:17:14.786 EEST [25141] LOG:  aborting any active transactions
+2026-07-08 06:17:14.793 EEST [25141] LOG:  background worker "logical replication launcher" (PID 25153) exited with exit code 1
+2026-07-08 06:17:14.793 EEST [25148] LOG:  shutting down
+2026-07-08 06:17:14.795 EEST [25148] LOG:  checkpoint starting: shutdown immediate
+2026-07-08 06:17:14.839 EEST [25148] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.002 s, total=0.046 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/47CB5B8, redo lsn=0/47CB5B8
+2026-07-08 06:17:14.876 EEST [25141] LOG:  database system is shut down
+2026-07-08 06:17:50.870 EEST [25255] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 06:17:50.873 EEST [25255] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 06:17:50.876 EEST [25255] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 06:17:50.891 EEST [25264] LOG:  database system was shut down at 2026-07-08 06:17:14 EEST
+2026-07-08 06:17:50.901 EEST [25255] LOG:  database system is ready to accept connections
+2026-07-08 06:18:48.760 EEST [25255] LOG:  received fast shutdown request
+2026-07-08 06:18:48.766 EEST [25255] LOG:  aborting any active transactions
+2026-07-08 06:18:48.772 EEST [25255] LOG:  background worker "logical replication launcher" (PID 25267) exited with exit code 1
+2026-07-08 06:18:48.775 EEST [25262] LOG:  shutting down
+2026-07-08 06:18:48.776 EEST [25262] LOG:  checkpoint starting: shutdown immediate
+2026-07-08 06:18:48.802 EEST [25262] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.002 s, total=0.027 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/47CB668, redo lsn=0/47CB668
+2026-07-08 06:18:48.840 EEST [25255] LOG:  database system is shut down
+2026-07-08 06:27:59.461 EEST [27589] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 06:27:59.465 EEST [27589] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 06:27:59.468 EEST [27589] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 06:27:59.499 EEST [27598] LOG:  database system was shut down at 2026-07-08 06:18:48 EEST
+2026-07-08 06:27:59.527 EEST [27589] LOG:  database system is ready to accept connections
+2026-07-08 06:28:37.493 EEST [27589] LOG:  received fast shutdown request
+2026-07-08 06:28:37.498 EEST [27589] LOG:  aborting any active transactions
+2026-07-08 06:28:37.504 EEST [27589] LOG:  background worker "logical replication launcher" (PID 27601) exited with exit code 1
+2026-07-08 06:28:37.505 EEST [27596] LOG:  shutting down
+2026-07-08 06:28:37.508 EEST [27596] LOG:  checkpoint starting: shutdown immediate
+2026-07-08 06:28:37.550 EEST [27596] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.002 s, total=0.044 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/47CB718, redo lsn=0/47CB718
+2026-07-08 06:28:37.588 EEST [27589] LOG:  database system is shut down
+2026-07-08 06:28:43.902 EEST [27685] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 06:28:43.904 EEST [27685] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 06:28:43.907 EEST [27685] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 06:28:43.921 EEST [27694] LOG:  database system was shut down at 2026-07-08 06:28:37 EEST
+2026-07-08 06:28:43.932 EEST [27685] LOG:  database system is ready to accept connections
+2026-07-08 06:33:44.019 EEST [27692] LOG:  checkpoint starting: time
+2026-07-08 06:33:44.076 EEST [27692] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.014 s, sync=0.003 s, total=0.057 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/47CB820, redo lsn=0/47CB7C8
+2026-07-08 06:42:18.639 EEST [30620] ERROR:  database "harmash" already exists
+2026-07-08 06:42:18.639 EEST [30620] STATEMENT:  CREATE DATABASE harmash;
+2026-07-08 06:45:52.067 EEST [31255] ERROR:  database "harmash" already exists
+2026-07-08 06:45:52.067 EEST [31255] STATEMENT:  CREATE DATABASE harmash;
+2026-07-08 06:47:51.587 EEST [27685] LOG:  received fast shutdown request
+2026-07-08 06:47:51.594 EEST [27685] LOG:  aborting any active transactions
+2026-07-08 06:47:51.603 EEST [27685] LOG:  background worker "logical replication launcher" (PID 27697) exited with exit code 1
+2026-07-08 06:47:51.603 EEST [27692] LOG:  shutting down
+2026-07-08 06:47:51.606 EEST [27692] LOG:  checkpoint starting: shutdown immediate
+2026-07-08 06:47:51.643 EEST [27692] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.001 s, total=0.039 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/47CB8D0, redo lsn=0/47CB8D0
+2026-07-08 06:47:51.683 EEST [27685] LOG:  database system is shut down
+2026-07-08 06:51:14.869 EEST [1504] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 06:51:14.872 EEST [1504] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 06:51:14.876 EEST [1504] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 06:51:14.903 EEST [1519] LOG:  database system was shut down at 2026-07-08 06:47:51 EEST
+2026-07-08 06:51:14.931 EEST [1504] LOG:  database system is ready to accept connections
+2026-07-08 06:56:15.001 EEST [1511] LOG:  checkpoint starting: time
+2026-07-08 06:56:15.045 EEST [1511] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.002 s, total=0.045 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/47CB9D8, redo lsn=0/47CB980
+2026-07-08 15:57:43.414 EEST [16612] LOG:  starting PostgreSQL 18.2 on aarch64-unknown-linux-android, compiled by Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), 64-bit
+2026-07-08 15:57:43.418 EEST [16612] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-07-08 15:57:43.421 EEST [16612] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2026-07-08 15:57:43.508 EEST [16621] LOG:  database system was interrupted; last known up at 2026-07-08 06:56:15 EEST
+2026-07-08 15:57:43.728 EEST [16621] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-07-08 15:57:43.738 EEST [16621] LOG:  redo starts at 0/47CB980
+2026-07-08 15:57:43.738 EEST [16621] LOG:  invalid record length at 0/47CBA88: expected at least 24, got 0
+2026-07-08 15:57:43.738 EEST [16621] LOG:  redo done at 0/47CBA50 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-07-08 15:57:43.759 EEST [16619] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-07-08 15:57:43.789 EEST [16619] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.002 s, total=0.032 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/47CBA88, redo lsn=0/47CBA88
+2026-07-08 15:57:43.798 EEST [16612] LOG:  database system is ready to accept connections
+2026-07-08 15:58:34.808 EEST [16778] ERROR:  database "harmash" already exists
+2026-07-08 15:58:34.808 EEST [16778] STATEMENT:  CREATE DATABASE harmash;
+2026-07-08 15:58:53.983 EEST [16846] FATAL:  database "u0_a653" does not exist
+2026-07-08 15:59:02.802 EEST [16619] LOG:  checkpoint starting: immediate force wait
+2026-07-08 15:59:02.837 EEST [16619] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.001 s, total=0.036 s; sync files=1, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=2 kB; lsn=0/47CC4E0, redo lsn=0/47CC488
+2026-07-08 16:04:02.862 EEST [16619] LOG:  checkpoint starting: time
+2026-07-08 16:05:38.133 EEST [16619] LOG:  checkpoint complete: wrote 948 buffers (5.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=95.117 s, sync=0.092 s, total=95.272 s; sync files=302, longest=0.008 s, average=0.001 s; distance=4398 kB, estimate=4398 kB; lsn=0/4C18080, redo lsn=0/4C17FD8
